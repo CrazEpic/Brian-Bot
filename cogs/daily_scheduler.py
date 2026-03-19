@@ -78,7 +78,7 @@ class DailyScheduler(commands.Cog):
                     continue
 
                 count_str = f"{data['counter']:03d}"
-                await channel.send(f"Day {count_str}")
+                await channel.send(f"__Day {count_str}__")
 
                 data["counter"] += 1
                 data["last_run_date"] = today_str
